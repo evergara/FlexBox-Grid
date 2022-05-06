@@ -15,9 +15,11 @@ body {
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-	/**flex*/
+	/**flexBox*/
+	/**
 	display: flex;
 	gap: 20px;
+	**/
 }
 
 .titulo {
@@ -26,11 +28,14 @@ body {
 }
 
 .contenedor-conciertos {
+	
+	/**flexBox**/
+	/**
 	width: 70%;
-	/**flex**/
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+	**/
 }
 
 .card {
@@ -42,16 +47,20 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
-    /**flex**/
+    /**flexBox**/
+	/**
 	width: calc(33.33% - 20px);
+	*/
 
 }
 
 .card .textos {
 	height: 100%;
-	/**flex**/
+	/**flexBox**/
+	/**
 	justify-content: space-between;
     flex-direction: column;
+	*/
 	
 }
 
@@ -61,12 +70,14 @@ body {
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
-    width: 30%;
-	/**flex**/
+    
+	/**flexBox**/
+	/**
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
+    */
 }
 
 .banner ul {
