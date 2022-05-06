@@ -15,3 +15,47 @@ main > * {
 	padding:10px;
 	font-size: 3em;
 }
+
+/**Definimos el GRID container**/
+main {
+	display: grid;
+	gap: 1em;
+	grid-template-areas: 
+	  "header"
+	  "right"
+	  "article"
+	  "left"
+	  "footer"
+	;
+}
+
+/**Destok**/
+
+@media (min-width: 576px){
+	main {
+		grid-template-areas: 
+		  "header header header"
+		  "right article left"
+		  "footer footer footer"
+		;
+	}
+	
+}
+
+/**Nombramos los Elementos**/
+header {
+	grid-area: header;
+}
+aside:first-of-type {
+	grid-area: right;
+}
+aside:last-of-type{
+	grid-area: left;
+}
+article {
+	grid-area: article;
+}
+footer {
+	grid-area: footer;
+}
+
