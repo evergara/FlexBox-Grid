@@ -20,6 +20,11 @@ body {
 	display: flex;
 	gap: 20px;
 	**/
+
+	/**GRID**/
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
 }
 
 .titulo {
@@ -36,6 +41,10 @@ body {
 	flex-wrap: wrap;
 	gap: 20px;
 	**/
+	/**GRID**/
+	display: grid;
+	grid-template-columns: repeat(3, 1fr );
+	gap: 20px;
 }
 
 .card {
@@ -61,7 +70,9 @@ body {
 	justify-content: space-between;
     flex-direction: column;
 	*/
-	
+	/**GRID**/
+	display: grid;
+	grid-template-rows: 1fr auto;
 }
 
 .banner {
@@ -78,6 +89,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
     */
+
+	/**GRID**/
+	display: grid;
+	grid-template-rows: auto auto auto;
+	align-items: center;
 }
 
 .banner ul {
