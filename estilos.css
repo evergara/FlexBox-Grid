@@ -8,28 +8,12 @@ body {
 	background: #1D202B;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
-	min-height: 100vh;
 }
 
 .contenedor {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
-
+	height: 100vh;
+	padding: 10px;
 	display: grid;
-	grid-template-rows: auto auto;
-	gap: 10px;
-}
-
-.titulo {
-	font-size: 24px;
-	padding: 20px 0;
-}
-
-.contenedor-conciertos {
-	display: grid;
-	grid-template-rows: repeat(3, auto);
 	gap: 10px;
 }
 
@@ -42,82 +26,49 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card .textos {
 	height: 100%;
-    display: flex;
+	display: flex;
 	justify-content: space-between;
     flex-direction: column;
-
-}
-
-.banner {
-	border-radius: 10px;
-	text-align: center;
-	padding: 20px;
-	background-size: cover;
-	background-position: center center;
-    
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-   
-}
-
-.banner ul {
-	list-style: none;
-}
-
-.banner ul li {
-	margin: 15px;
-	font-weight: bold;
-}
-
-.banner .boton {
-	background: #FFD600;
-	display: block;
-	width: 100%;
-	font-weight: bold;
-	font-size: 14px;
-	text-align: center;
-	padding: 10px;
-	border: none;
-	border-radius: 100px;
-	font-family: 'Roboto', sans-serif;
-	cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
 	.contenedor {
-		grid-template-columns: 3fr 1fr;
-		gap: 20px;
+		height: 100vh;
+		display: grid;
+		gap: 10px 20px;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+		grid-auto-rows: 1fr;
 	}
-	.contenedor-conciertos {
-		grid-template-columns: repeat(3, 1fr );
-		gap: 20px;
-	}
+	
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px)  {
 	.contenedor {
-		grid-template-columns: 3fr 1fr;
-		gap: 20px;
-	}
-	.contenedor-conciertos {
+		height: 100vh;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr );
-		gap: 20px;
+		gap: 30px 10px;
+		grid-template-columns: auto auto ;
+		grid-template-rows: auto auto;
+		grid-auto-rows: 1fr;
 	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
 	.contenedor {
-		grid-template-rows: auto auto;
-		gap: 10px;
+		height: 100vh;
+		display: grid;
+		gap: 30px;
+		grid-template-columns: auto auto ;
+		grid-template-rows: auto  auto; 
 	}
-	.contenedor-conciertos {
-		grid-template-rows: repeat(3, auto);
-	    gap: 10px;
-	}
+	
 }
